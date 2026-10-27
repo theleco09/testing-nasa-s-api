@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NASA APOD - Explorador Espacial</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>🚀 Explorador Espacial</h1>
+        <p>Descubra imagens incríveis do universo!</p>
+    </header>
+
+    <main>
+        <section class="pesquisa">
+            <label for="astro">Qual astro você deseja pesquisar?</label>
+
+            <div class="campo-pesquisa">
+                <input
+                    type="text"
+                    id="astro"
+                    placeholder="Ex.: Mars, Jupiter, Saturn..."
+                >
+
+                <button id="botaoPesquisar">Pesquisar</button>
+            </div>
+        </section>
+
+        <p id="mensagem" role="status">
+            Digite o nome de um astro para começar.
+        </p>
+
+        <section id="carrossel" class="carrossel" hidden>
+            <button id="anterior" class="seta" aria-label="Imagem anterior">
+                &#10094;
+            </button>
+
+            <article class="cartao">
+                <img id="imagem" src="" alt="Imagem astronômica">
+
+                <h2 id="titulo"></h2>
+
+                <p id="data"></p>
+
+                <p id="descricao"></p>
+
+                <a
+                    id="fonte"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Ver fonte original
+                </a>
+            </article>
+
+            <button id="proximo" class="seta" aria-label="Próxima imagem">
+                &#10095;
+            </button>
+        </section>
+
+        <p id="contador"></p>
+    </main>
+
+    <footer>
+        <p>Dados fornecidos pela NASA.</p>
+    </footer>
+</body>
+</html>
